@@ -1,0 +1,16 @@
+<div class="grid md:grid-cols-2">
+<div class="p-8">
+  <h2 class="text-xl font-bold text-blue-500">Voertuiginformatie opzoeken</h2>
+
+  <!-- SELECT VOERTUIG TYPE-->
+  <label class="block mt-4">
+    <span class="text-gray-700">Van welk type voertuig wilt u voertuiginformatie opzoeken?</span>
+    <select class="block w-full mt-1 rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
+            name="vehicle-type" [(ngModel)]="vehicleType">
+      <option *ngFor="let vehicle of vehicleTypes | enumToArray ">{{vehicle}}</option>
+    </select>
+  </label>
+  <app-vehicle-form [vehicleType] = "vehicleType" ></app-vehicle-form>
+</div>
+<app-vehicle-image [vehicleType] = "vehicleType" ></app-vehicle-image>
+</div>
