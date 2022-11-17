@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {VehicleType} from "../../shared/interfaces";
+import {VehicleType} from "../../shared/enums";
 
 @Component({
   selector: 'app-vehicle-selection',

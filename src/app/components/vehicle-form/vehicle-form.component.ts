@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {VehicleType} from "../../shared/interfaces";
+import {VehicleType} from "../../shared/enums";
 import { FormBuilder, Validators} from '@angular/forms';
 import {carTypes, motorTypes} from "../../shared/constants";
 import {KentekenCheck} from 'rdw-kenteken-check'
